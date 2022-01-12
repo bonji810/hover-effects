@@ -1,11 +1,8 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: #2c3e50;
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 body {
+  font-family: 'Lato', Avenir, Helvetica, Arial, sans-serif;
+  background-color: #9EC0ED;
   margin: 0;
   padding: 0;
 }
@@ -32,4 +29,7 @@ body {
 
 .title {
   font-size: 2vw;
+  letter-spacing: 0.35vw;
+  color: #F5F4EF;
+  overflow: hidden;
 }

@@ -88,6 +88,7 @@ const geometry = new THREE.PlaneBufferGeometry(
 )
 const object = new THREE.Mesh(geometry, material)
 scene.add(object)
+
 canvas.addEventListener('mouseenter', () => {
   gsap.to(material.uniforms.displacement, 0.8, {
     value: 1.0,
