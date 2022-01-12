@@ -70,13 +70,13 @@ filter.wrapT = THREE.RepeatWrapping
 const intensity = 0.3
 const material = new THREE.ShaderMaterial({
   uniforms: {
-    effect: { type: 'f', value: intensity },
-    displacement: { type: 'f', value: 0.0 },
-    texture1: { type: 't', value: texture1 },
-    texture2: { type: 't', value: texture2 },
-    filterTexture: { type: 't', value: filter },
-    resolution: { type: "v2", value: new THREE.Vector2(canvas.offsetWidth, canvas.offsetHeight) },
-    imageResolution: { type: 'v2', value: new THREE.Vector2(3456, 5184)},
+    effect: { value: intensity },
+    displacement: { value: 0.0 },
+    texture1: { value: texture1 },
+    texture2: { value: texture2 },
+    filterTexture: { value: filter },
+    resolution: { value: new THREE.Vector2(canvas.offsetWidth, canvas.offsetHeight) },
+    imageResolution: { value: new THREE.Vector2(3456, 5184)},
   },
   vertexShader: vertex,
   fragmentShader: fragment,
